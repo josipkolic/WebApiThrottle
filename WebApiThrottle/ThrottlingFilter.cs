@@ -213,6 +213,7 @@ namespace WebApiThrottle
                                     content,
                                     QuotaExceededResponseCode,
                                     core.RetryAfterFrom(throttleCounter.Timestamp, rateLimitPeriod));
+                                break;
                             }
                         }
                     }
